@@ -1,5 +1,14 @@
 ### Notes
 - [The challenge](https://codingchallenges.fyi/challenges/challenge-wc)
+- Build steps:
+```
+mkdir build
+cd build
+cmake ..
+make
+cd src
+./ccwc
+```
 - [C++ STL Filesystem Library](https://en.cppreference.com/w/cpp/filesystem)
 	- [File path](https://en.cppreference.com/w/cpp/filesystem/path/path)
 	- [File size](https://en.cppreference.com/w/cpp/filesystem/file_size)
