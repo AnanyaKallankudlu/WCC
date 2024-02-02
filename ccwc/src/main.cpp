@@ -47,6 +47,9 @@ void ParseArgs(int argc, char** argv, Options& options) {
 
         if (vm.count("input-file"))
             options.filename = vm["input-file"].as<std::string>();
+
+        if (!options.countBytes && !options.countLines && !options.countWords && !options.countChars)
+            options.countBytes = options.countLines = options.countWords = options.countChars = true;
     }
     catch(std::exception& e) {
         throw(e);
